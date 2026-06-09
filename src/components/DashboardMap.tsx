@@ -35,8 +35,8 @@ function createClusterIcon(count: number, color: string, selected: boolean): L.D
 
 function createPointIcon(damageLevel: DamageLevel, selected: boolean): L.DivIcon {
   const color = DAMAGE_COLORS[damageLevel] ?? "#c0392b";
-  const size = selected ? 14 : 10;
-  const border = selected ? "2.5px solid #1a1a2e" : "2px solid #fff";
+  const size = selected ? 22 : 16;
+  const border = selected ? "3px solid #1a1a2e" : "2.5px solid #fff";
   return L.divIcon({
     className: "",
     html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};border:${border};box-shadow:0 1px 5px rgba(0,0,0,0.38);"></div>`,
